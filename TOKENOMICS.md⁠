@@ -1,0 +1,63 @@
+from pathlib import Path
+
+tokenomics = """# GazaX Tokenomics
+
+## Token Overview
+
+- **Project Name:** GazaX
+
+- **Token Symbol:** GZAX
+
+- **Network:** BNB Smart Chain (BEP-20)
+
+- **Total Supply:** 5,000,000 GZAX
+
+- **Decimals:** 18
+
+- **Minting:** Disabled after deployment
+
+- **Buy Tax:** 0%
+
+- **Sell Tax:** 0%
+
+- **Transfer Tax:** 0%
+
+- **Blacklist:** None
+
+- **Trading Pause:** None
+
+## Initial Allocation
+
+The full supply is minted to the deployer's wallet at launch.
+
+Proposed allocation before public launch:
+
+- **10% — Initial Liquidity:** 500,000 GZAX
+
+- **70% — Project Treasury:** 3,500,000 GZAX
+
+- **10% — Development and Operations:** 500,000 GZAX
+
+- **10% — Community, Partnerships, and Marketing:** 500,000 GZAX
+
+## Transparency Commitments
+
+- No additional GZAX can be minted.
+
+- There are no hidden transaction fees.
+
+- Wallet allocations should be disclosed before launch.
+
+- Treasury movements should be publicly reported.
+
+- GazaX does not guarantee profits or price appreciation.
+
+## Important Notice
+
+This document describes a proposed allocation model and may be revised before launch. Any final allocation should be published before liquidity is added and public trading begins.
+
+"""
+
+path = Path("/mnt/data/TOKENOMICS.md")
+
+path.write_text(tokenomics, encoding="utf-8")

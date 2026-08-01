@@ -1,0 +1,49 @@
+from pathlib import Path
+
+roadmap = """# GazaX Roadmap
+
+## Phase 1 - Foundation
+
+- Finalize branding
+
+- Publish GitHub repository
+
+- Complete Whitepaper
+
+- Deploy audited smart contract
+
+## Phase 2 - Launch
+
+- Deploy on BNB Smart Chain
+
+- Verify contract on BscScan
+
+- Add liquidity to PancakeSwap
+
+- Launch official website
+
+## Phase 3 - Growth
+
+- Community expansion
+
+- Apply to CoinGecko
+
+- Apply to CoinMarketCap
+
+- Marketing campaigns
+
+## Phase 4 - Ecosystem
+
+- Partnerships
+
+- New utilities
+
+- Governance planning
+
+- Long-term development
+
+"""
+
+path=Path("/mnt/data/ROADMAP.md")
+
+path.write_text(roadmap,encoding="utf-8")

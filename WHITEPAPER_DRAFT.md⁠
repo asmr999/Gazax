@@ -1,0 +1,53 @@
+from pathlib import Path
+
+text = """# GazaX Whitepaper (Draft v0.1)
+
+## Overview
+
+GazaX (GZAX) is a BEP-20 token on BNB Smart Chain designed with simplicity, transparency, and a fixed supply.
+
+## Vision
+
+Build a transparent blockchain ecosystem that supports innovation, entrepreneurship, and long-term digital participation.
+
+## Mission
+
+Provide a secure digital asset with clear rules and open documentation.
+
+## Core Principles
+
+- Fixed supply: 5,000,000 GZAX
+
+- No minting after deployment
+
+- No buy/sell taxes
+
+- Open-source smart contract
+
+- Community-focused development
+
+## Token Details
+
+- Name: GazaX
+
+- Symbol: GZAX
+
+- Network: BNB Smart Chain
+
+- Decimals: 18
+
+## Roadmap
+
+See ROADMAP.md for milestones.
+
+## Risk Notice
+
+Cryptocurrencies are volatile assets. Holding or purchasing GZAX does not guarantee profit. Users should do their own research before participating.
+
+© GazaX Project
+
+"""
+
+p=Path("/mnt/data/WHITEPAPER_DRAFT.md")
+
+p.write_text(text,encoding="utf-8")
